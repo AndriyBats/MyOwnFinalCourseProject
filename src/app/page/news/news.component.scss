@@ -1,0 +1,19 @@
+.news-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-style{
+    margin: 20px;
+    width: 350px;
+  }
+
+  .text-color-lime{
+      color: lime !important;
+  }
+
+  .btn-success{
+      background-color: lime;
+  }

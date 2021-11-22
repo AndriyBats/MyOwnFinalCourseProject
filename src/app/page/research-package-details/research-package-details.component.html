@@ -1,0 +1,51 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-12 m-auto">
+        <div class="card d-block p-3 card-style d-flex justify-content-center ">
+          <div class="card-body">
+            <h5 class="card-title text-success text-center text-uppercase" style="color: lime !important;">{{currentPackage?.researchPackageName}}</h5>
+          </div>
+          <div class="mx-auto">
+            <img [src]="currentPackage?.imagePath" style="width: 350px;height: 350px;" alt="...">
+          </div>
+          <p class="card-text text-center"> Основні показники: {{currentPackage?.mainIndicators }}</p>
+          <table class="table border rounded">
+            <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Параметр</th>
+              <th scope="col">Метод випробування</th>
+              <th scope="col" style="width: 85px;"><p [ngClass]="{'active': optionPrice === 1}">Варіант 1</p></th>
+              <th scope="col" style="width: 85px;"><p [ngClass]="{'active': optionPrice === 2}">Варіант 2</p></th>
+              <th scope="col" style="width: 85px;"><p [ngClass]="{'active': optionPrice === 3}">Варіант 3</p></th>
+              <th scope="col" style="width: 85px;"><p [ngClass]="{'active': optionPrice === 4}">Варіант 4</p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let analyz of currentPackage?.tickets">
+              <td>{{ analyz?.name.id }}</td>
+              <td>{{ analyz?.name.analyzName }}</td>
+              <td>{{ analyz?.name.testMethod }}</td>
+              <td>{{ analyz?.name.priceOption1 }}</td>
+              <td>{{ analyz?.name.priceOption2 }}</td>
+              <td>{{ analyz?.name.priceOption3 }}</td>
+              <td>{{ analyz?.name.priceOption4 }}</td>
+            </tr>
+            </tbody>
+          </table>
+        
+          <h3 class="text-center"> Загальна вартість пакету випробувань <span style="color: greenyellow; font-weight: 500;">{{ currentPackage?.price}}</span>
+            грн.
+          </h3>
+          <div class="d-flex align-items-center justify-content-center">
+            <button class="btn btn-outline-success rounded-pill fs-5 mx-1 d-flex justify-content-center align-items-center" style="width: 40px;" (click)="changeCount(currentPackage, false)"> - </button>
+            <div class="border border-success rounded-pill fs-4 d-flex justify-content-center align-items-center"  style="width: 60px; height: 60px;">{{countPackage}}</div>
+            <button class="btn btn-outline-success rounded-pill fs-5 mx-1 d-flex justify-content-center align-items-center" style="width: 40px;" (click)="changeCount(currentPackage, true)"> + </button>
+          <button class="btn btn-outline-success rounded-pill mx-3 " style="height: 55px;" (click)="addToBasket(currentPackage)" > Додати до корзини  </button>
+        </div>
+          <a class="btn btn-success rounded-pill m-auto my-3" (click)="location.back()" style="width: 100px;">Назад</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

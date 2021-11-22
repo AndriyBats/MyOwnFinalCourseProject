@@ -1,0 +1,221 @@
+<div class="container">
+  <section class="first-block">
+    <div id="carouselExampleSlidesOnly" class="carousel carousel-1 slide position-absolute" data-bs-ride="carousel"
+      style="z-index: 10;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-content">
+            <h2 style="color: lime;">ВИКОРИСТАННЯ НАЙСУЧАСНІШИХ ПРИЛАДІВ</h2>
+            <p>Для визначення якості нафтопродуктів використовуються найсучасніші прилади, які на даний момент часу є на
+              ринку</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <h2 style="color: lime;">ВИКОРИСТАННЯ АРБІТРАЖНИХ МЕТОДІВ ВИПРОБУВАННЯ</h2>
+            <p>Для визначення якості нафтопродуктів в стаціонарних умовах використовуються арбітражні методи
+              випробування</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <h2 style="color: lime;">ДІЄ СИСТЕМА ЗНИЖОК</h2>
+            <p>При замовленні певної кількості випробувань діють знижки -10%, -20% і -30%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexagon2"></div>
+    <div class="hexagon1"></div>
+    <div class="hexagon3"></div>
+    <div class="hexagon4"></div>
+    <div class="hexagon5"></div>
+    <div class="hexagon6"></div>
+  </section>
+
+  <section class="second-block">
+    <div class="second-block-content">
+      <div class="analyzes-and-cost" [routerLink]="[ '/analyzes-and-cost' ]" routerLinkActive="active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZU5nGqdvUKKOszSK6cAT5u1GEAycdPQ2ZfA&usqp=CAU"
+          alt="" style="width: 20%;">
+        <p class="title-news">Аналізи і ціни</p>
+      </div>
+    </div>
+    <div class="second-block-content">
+      <div class="discount" [routerLink]="[ '/discounts' ]" routerLinkActive="active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-M3-35MtkKlMaf6wPl756IKGU31PHRzgMEw&usqp=CAU"
+          alt="" style="width: 20%;">
+        <p class="title-news">Акції</p>
+      </div>
+    </div>
+    <div class="second-block-content">
+      <div class="object-call" [routerLink]="[ '/object-call' ]" routerLinkActive="active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4pgULjwfHG7IgeW3x6-fq8A4lKNYzl8Pl7Q&usqp=CAU"
+          alt="" style="width: 20%;">
+        <p class="title-news">Випробування на місці</p>
+      </div>
+    </div>
+    <div class="second-block-content">
+      <div class="news" [routerLink]="[ '/news' ]" routerLinkActive="active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkxiI5LBcUSJtU_ff4lZaXd9aw8v6iF0mAJw&usqp=CAU"
+          alt="" style="width: 20%;">
+        <p class="title-news">Новини</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="discount-block">
+    <h2 class="title-discount-block">ВИГІДНІ АКЦІЇ</h2>
+    <ngx-slick-carousel class="carousel" #slickModal1="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let discount of pageDiscounts" class="slide">
+        <div class="card d-block p-3 card-style d-flex justify-content-center align-content-around position-relative">
+          <div class="card-body d-flex justify-content-center" style="height: 100px;">
+            <h5 class="card-title text-success text-center text-uppercase text-color">{{discount.discountName}}</h5>
+          </div>
+          <div class="mx-auto d-flex justify-content-center align-item-center position-relative"
+            style="width: 200px;height: 200px;">
+            <div class="hexagon1d"></div>
+            <div class="hexagon5d">{{discount.valueDiscount}}</div>
+            <img [src]="discount.imagePath" class="card-img-top  clipPath " style="width: 200px;height: 200px;"
+              alt="...">
+          </div>
+          <hr>
+          <p class="card-text text-center">{{discount.description | slice: 0: 75}} ...</p>
+          <h3 class="text-center"><span style="color: lime; font-weight: 500;">{{discount.price}}</span> грн.
+          </h3>
+          <a type="button" class="btn bg-color rounded-pill" [routerLink]="[ '/discounts' , discount.id]">Детальніше</a>
+          <p class="card-text text-center ">{{discount.validityPeriod}}</p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+    <div class="d-flex justify-content-center align-content-around">
+      <i type="button" (click)="next1()" class="bi bi-chevron-compact-left fs-1 mx-3 fw-bold btn-next"></i>
+      <i type="button" (click)="prev1()" class="bi bi-chevron-compact-right fs-1 mx-3 fw-bold btn-prev"></i>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="left-side-order py-3">
+      <h3>Ви маєте можливість замовити послуги прямо зараз</h3>
+      <h5>Менеджер надасть консультацію та сформує замовлення протягом <span style="color: lime; font-weight: 500;">15
+          хвилин</span></h5>
+      <div class="social__text-links d-flex align-items-center jc-c">
+        <a href="https://www.facebook.com/messages/t/100044486324941" target="_blank"
+          class="social__text-link social__text-link-solo fb-messenger">Написати нам в Messenger</a></div>
+    </div>
+    <div class="right-side-order">
+      <div class="image-order">
+        <div class="hexagon21"></div>
+        <div class="hexagon22"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-packages p-5">
+    <h2 class="text-uppercase text-center">Популярні пакети досліджень</h2>
+    <ngx-slick-carousel class="carousel" #slickModal2="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let package of pagePackage" class="slide">
+        <div class="card d-block p-3 card-style d-flex justify-content-center align-content-around">
+          <div class="card-body d-flex justify-content-center" style="height: 100px;">
+            <h5 class="card-title text-success text-center text-uppercase text-color">{{package.researchPackageName}}
+            </h5>
+          </div>
+          <div class="mx-auto d-flex justify-content-center align-item-center position-relative"
+            style="width: 200px;height: 200px;">
+            <div class="hexagon1d"></div>
+            <div class="hexagon5d"></div>
+            <img [src]="package.imagePath" class="card-img-top clipPath" style="width: 200px;height: 200px;" alt="...">
+          </div>
+          <hr>
+          <p class="card-text text-center">Основні показники: {{package.mainIndicators | slice: 0: 50}} ...</p>
+          <h3 class="text-center"><span style="color: lime; font-weight: 500;">{{package.price}}</span> грн.
+          </h3>
+          <button type="button" class="btn rounded-pill bg-color"
+            [routerLink]="[ '/research-package' , package.id]">Детальніше</button>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+    <div class="d-flex justify-content-center align-content-around">
+      <i type="button" (click)="next2()" class="bi bi-chevron-compact-left fs-1 mx-3 fw-bold btn-next"></i>
+      <i type="button" (click)="prev2()" class="bi bi-chevron-compact-right fs-1 mx-3 fw-bold btn-prev"></i>
+    </div>
+  </section>
+
+  <section class="priority-areas position-relative">
+    <h2 class="text-uppercase text-center">Пріорітетні напрямки в нашій роботі</h2>
+    <p class="fs-4">Будьте впевнені в достовірності наших випробувань. Щоб забезпечити максимальну точність результатів
+      ваших зразків, ми ставимо в пріоритет такі напрямки нашої роботи:</p>
+    <div class="d-flex flex-wrap">
+      <div class="priority-left-block d-flex justify-content-center align-content-center">
+        <img src="\assets\image\1563399002_5a1c91e2cb008.png" class="rounded priority-image" alt="...">
+      </div>
+      <div class="priority-right-block fs-5 d-flex justify-content-center align-content-center">
+        <ul>
+          <li>Сучасне автоматизоване обладнання для випробувань</li>
+          <li>Арбітражні методи випробувань</li>
+          <li>Постійне підвищення кваліфікації фахівців лабораторій</li>
+          <li>Гнучкі підходи до організації роботи лабораторій</li>
+          <li>Клінтоорієнтованість та результативність</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="news-block">
+    <h2 class="title-discount-block">ХОРОШІ НОВИНИ КОМПАНІЇ</h2>
+    <ngx-slick-carousel class="carousel" #slickModal3="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let news of pageNews" class="slide">
+        <div class="card d-block p-3 card-style d-flex justify-content-center align-content-around">
+          <div class="card-body d-flex justify-content-center" style="height: 100px;">
+            <h5 class="card-title text-success text-center text-uppercase text-color">{{news.newsName}}</h5>
+          </div>
+          <div class="mx-auto d-flex justify-content-center align-item-center position-relative"
+            style="width: 200px;height: 200px;">
+            <div class="hexagon1d"></div>
+            <div class="hexagon5d"></div>
+            <img [src]="news.imagePath" class="card-img-top clipPath" style="width: 200px;height: 200px;" alt="...">
+          </div>
+          <hr>
+          <p class="card-text text-center">{{news.description | slice: 0: 70}} ...</p>
+
+          <a type="button" class="btn bg-color rounded-pill" [routerLink]="[ '/news' , news.id]">Детальніше</a>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+    <div class="d-flex justify-content-center align-content-around">
+      <i type="button" (click)="next3()" class="bi bi-chevron-compact-left fs-1 mx-3 fw-bold btn-next"></i>
+      <i type="button" (click)="prev3()" class="bi bi-chevron-compact-right fs-1 mx-3 fw-bold btn-prev"></i>
+    </div>
+  </section>
+
+
+  <section class="statistics p-3">
+    <h2 class="text-center">НАША СТАТИСТИКА</h2>
+    <div class="d-flex justify-content-center flex-wrap m-3">
+      <div class="count-research" style="width: 200px;">
+        <div class="d-flex justify-content-center align-items-center" style="width: 200px; height: 200px;">
+          <div class="count-research-hexagon d-flex justify-content-center align-items-center">60</div>
+        </div>
+        <p class="text-center fs-4 lh-1 my-2">видів випробувань</p>
+      </div>
+      <div class="count-specialist" style="width: 200px;">
+        <div class="d-flex justify-content-center align-items-center" style="width: 200px; height: 200px;">
+          <div class="count-specialist-hexagon d-flex justify-content-center align-items-center">80</div>
+        </div>
+        <div class="text-center fs-4 lh-1 my-2">кваліфкованих спеціалістів</div>
+      </div>
+      <div class="count-laboratory" style="width: 200px;">
+        <div class="d-flex justify-content-center align-items-center" style="width: 200px; height: 200px;">
+          <div class="count-laboratory-hexagon d-flex justify-content-center align-items-center">20</div>
+        </div>
+        <p class="text-center fs-4 lh-1 my-2">лабораторій</p>
+      </div>
+    </div>
+  </section>
+</div>

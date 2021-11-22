@@ -1,0 +1,135 @@
+<div class="container">
+  <h2 class="text-uppercase text-center py-4">Виклик Мобільної лабораторії для проведення випробування на місці</h2>
+  <div class="object-call">
+    <div class="left-block-object-call">
+      <h4 class="text-uppercase text-center">Ситуації, в яких це допоможе</h4>
+      <div class="situation m-5  d-flex align-items-center">
+        <div class="situation-image ">
+          <img style="width: 200px; height: 200px;  border-radius: 10px;"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JrM5VKDl3cqYAJ34IdxvZi5_OlderjwTEg&usqp=CAU"
+            alt="">
+        </div>
+        <div class="situation-comment">
+          <div class="comment-title mx-4 fw-bold text-uppercase fs-16">Ви зайнята людина?</div>
+          <div class="comment-text mx-4">У вас немає часу організовувати відбір проб і передавати на випробування.</div>
+        </div>
+      </div>
+      <div class="situation m-5 d-flex align-items-center">
+        <div class="situation-image">
+          <img style="width: 200px; height: 200px;  border-radius: 10px;" src="https://www.mos-nt.ru/local/img/service-nav-2.png" alt="">
+        </div>
+        <div class="situation-comment">
+          <div class="comment-title mx-4 fw-bold text-uppercase fs-16">Ви хочете бути присутні під час випробування?
+          </div>
+          <div class="comment-text mx-4">Ви будете впевнені на 100 % у нашому професіоналізмі і достовірності
+            результатів.</div>
+        </div>
+      </div>
+      <div class="situation m-5  d-flex align-items-center">
+        <div class="situation-image">
+          <img style="width: 200px; height: 200px; border-radius: 10px;" src="https://s1.1zoom.ru/big7/147/Roads_Motion_Night_489310.jpg"
+            alt="">
+        </div>
+        <div class="situation-comment">
+          <div class="comment-title mx-4 fw-bold text-uppercase fs-16">Вам потрібно провести випробування у короткий
+            термін?</div>
+          <div class="comment-text mx-4">У вас ситуація, коли постачальник не хоче довго чакати, поки Ви відберете
+            пробу, передасте на випробуванні і дочекаєтеся результату.</div>
+        </div>
+      </div>
+    </div>
+    <form class="right-block-object-call gap-2 d-grid" [formGroup]="objectCallForm" (ngSubmit)="confirmOrder()">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ПІП або Назвa компанії: *</label>
+        <input type="text" class="form-control" formControlName="companyName" id="exampleFormControlInput1"  placeholder="ПІП або Назва компанії" [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }">
+          <div *ngIf="submitted && f.companyName.errors" class="invalid-feedback">
+            <div *ngIf="f.companyName.errors.required">Вкажіть назву компанії або ПІП</div>
+            <div *ngIf="f.companyName.errors.minlength">Вкажіть повну назву компанії </div>
+            <div *ngIf="f.companyName.errors.maxlength">Назва не повинна перевищувати 30 символів</div>
+            <div *ngIf="f.companyName.errors.pattern">Не повинно бути цифр</div>
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Контактна особа: *</label>
+        <input type="text" class="form-control" formControlName="firstAndLastName" id="exampleFormControlInput2" placeholder="ПІП"  [ngClass]="{ 'is-invalid': submitted && f.firstAndLastName.errors }" >
+          <div *ngIf="submitted && f.firstAndLastName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstAndLastName.errors.required">Вкажіть своє прізвище, ім'я, по-батькові</div>
+            <div *ngIf="f.firstAndLastName.errors.minlength">Вкажіть повне ПІП </div>
+            <div *ngIf="f.firstAndLastName.errors.maxlength">ПІП не повинно перевищувати 30 символів</div>
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label">Телефон: *</label>
+        <input type="tel" class="form-control" formControlName="phoneNumber" id="exampleFormControlInput3"  placeholder="Телефон" [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }" />
+        <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+          <div *ngIf="f.phoneNumber.errors.required">Вкажіть номер телефону</div>
+          <div *ngIf="f.phoneNumber.errors.pattern">Формат номеру телефону невірний</div>
+        </div>
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput4" class="form-label">Email: *</label>
+        <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput4"  placeholder="Електронна адреса" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <div *ngIf="f.email.errors.required">Вкажіть електронну адресу</div>
+          <div *ngIf="f.email.errors.email">Формат електронної адреси невірний</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput5" class="form-label">Дата, коли потрібно до Вас приїхати: *</label>
+        <input type="date" class="form-control" formControlName="dateArrival" id="exampleFormControlInput5"  placeholder="Натисність щоб обрати дату" [ngClass]="{ 'is-invalid': submitted && f.dateArrival.errors }" />
+        <div *ngIf="submitted && f.dateArrival.errors" class="invalid-feedback">
+          <div *ngIf="f.dateArrival.errors.required">Вкажіть дату приїзду</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput6" class="form-label">Час, коли потрібно до Вас приїхати: *</label>
+        <input type="time" class="form-control" formControlName="timeArrival" id="exampleFormControlInput6"  placeholder="Натисність щоб обрати час" [ngClass]="{ 'is-invalid': submitted && f.timeArrival.errors }" />
+        <div *ngIf="submitted && f.timeArrival.errors" class="invalid-feedback">
+          <div *ngIf="f.timeArrival.errors.required">Вкажіть час приїзду</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput7" class="form-label">Адреса, куди потрібно приїхати: *</label>
+        <input type="text" class="form-control" formControlName="addressArrival" id="exampleFormControlInput7" placeholder="Населений пункт, вулиця, номер будинку" [ngClass]="{ 'is-invalid': submitted && f.addressArrival.errors }" />
+        <div *ngIf="submitted && f.addressArrival.errors" class="invalid-feedback">
+          <div *ngIf="f.addressArrival.errors.required">Вкажіть час приїзду</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput8" class="form-label">Вкажіть кількість кілометрів до найближчого до Вас  міста зі списку (Київ, Львів, Дніпро, Одеса): *</label>
+        <input type="number" class="form-control" formControlName="amountKilometers"
+          (change)="addAmountKilometers($event)" id="exampleFormControlInput8" laceholder="Кількість кілометрів" [ngClass]="{ 'is-invalid': submitted && f.amountKilometers.errors }" />
+          <div *ngIf="submitted && f.amountKilometers.errors" class="invalid-feedback">
+            <div *ngIf="f.amountKilometers.errors.required">Вкажіть відстань</div>
+          </div>
+      </div>
+      <div class="mb-3 rounded border border-info p-3">
+        <label for="exampleFormControlInput7" class="form-label">Перелік досліджень</label>
+        <div *ngFor="let analyz of basketArrival" class="d-flex fw-bold justify-content-between">
+          <p>{{ analyz.analyzName }} </p>
+          <p class="fw-bold" *ngIf="optionPrice === 1"> {{ analyz.priceOption1 * analyz.kilometer }} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 2"> {{ analyz.priceOption2 * analyz.kilometer  }} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 3"> {{ analyz.priceOption3 * analyz.kilometer }} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 4"> {{ analyz.priceOption4 * analyz.kilometer }} грн.</p>
+
+        </div>
+
+        <div *ngFor="let analyz of basket" class="d-flex fw-bold justify-content-between">
+          <p>{{ analyz.analyzName }} </p>
+          <p class="fw-bold" *ngIf="optionPrice === 1"> {{ analyz.priceOption1 * analyz.count}} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 2"> {{ analyz.priceOption2 * analyz.count}} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 3"> {{ analyz.priceOption3 * analyz.count}} грн.</p>
+          <p class="fw-bold" *ngIf="optionPrice === 4"> {{ analyz.priceOption4 * analyz.count}} грн.</p>
+        </div>
+        <hr>
+        <a class="text-success text-decoration-none" [routerLink]="[ '/analyzes-and-cost' ]"> + Обрати випробування</a>
+        <div class="text-center my-3">
+          <span class="fw-bold"> Разом:</span> {{total}} грн.
+          <i class="bi bi-trash-fill text-success mx-1" (click)="removeBasket()"></i>
+        </div>
+      </div>
+      <button  class="btn btn-success" type="submit">Відправити</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="news-content">
+      <div class="card d-block p-3 card-style d-flex justify-content-center" *ngFor="let news of pageNews">
+        <div class="card-body">
+          <h5 class="card-title text-success text-center text-uppercase text-color-lime">{{news?.newsName}}</h5>
+        </div>
+        <div class="mx-auto">
+          <img [src]="news.imagePath" class="card-img-top" style="width: 200px;height: 200px;" alt="...">
+        </div>
+        <p class="card-text text-center">{{news?.description | slice: 0: 70}} ...</p>
+        <a type="button " class="btn btn-success rounded-pill" [routerLink]="[ '/news' , news.id]">Детальніше</a>    
+      </div>
+    </div>
+  </div>

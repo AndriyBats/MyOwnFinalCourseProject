@@ -1,0 +1,431 @@
+@import'./variables';
+
+.container {
+  position: relative;
+}
+
+.first-block {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  margin-bottom: 20px;
+}
+
+.carousel-1 {
+  height: inherit;
+  padding: 180px 0 0;
+}
+
+.carousel-content {
+  width: 250px;
+}
+
+.hexagon1 {
+  background-color: lime;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 105px;
+  right: 850px;
+  clip-path: $clipPath
+}
+
+.hexagon1d {
+  background-color: lime;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  clip-path: $clipPath;
+  z-index: 10;
+}
+
+.hexagon2 {
+  background-image: url(https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/newseventsimage_1537198485721_mainnews2012_x1.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0px;
+  right: 700px;
+  clip-path: $clipPath
+}
+
+.hexagon3 {
+  background-image: url(https://safetyskills.com/wp-content/uploads/2020/11/Laboratory-Safety-Courses-Jan-1.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 25px;
+  right: 330px;
+  clip-path: $clipPath
+}
+
+.hexagon4 {
+  background-image: url(https://images.by.prom.st/97292375_w600_h600_97292375.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 270px;
+  right: 120px;
+  clip-path: $clipPath
+}
+
+.hexagon5 {
+  background-color: lime;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 235px;
+  right: 10px;
+  clip-path: $clipPath
+}
+
+.hexagon5d {
+  background-color: lime;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 130px;
+  right: -30px;
+  z-index: 10;
+  clip-path: $clipPath;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.hexagon6 {
+  background-color: lime;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 300px;
+  right: 700px;
+  clip-path: $clipPath
+}
+
+.second-block {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+
+.second-block-content {
+  width: 200px;
+  margin: 10px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analyzes-and-cost,
+.discount,
+.object-call,
+.news {
+  cursor: pointer;
+  padding: 10px;
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 3px 5px 5px lightgray;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease-out;
+}
+
+.title-news {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.analyzes-and-cost:hover,
+.discount:hover,
+.object-call:hover,
+.news:hover {
+  transform: scale(1.1);
+}
+
+.discount-block {
+  margin: 30px 0;
+  padding: 10px;
+}
+
+.news-block {
+  margin: 30px 0;
+}
+
+
+.title-discount-block {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.statistics {
+  margin: 30px 0;
+}
+
+.card-style {
+  margin: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.card-style:hover {
+  transform: scale(1.05);
+}
+
+.order {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 5px 10px 10px lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-side-order,
+.right-side-order {
+  width: 50%;
+  text-align: center;
+}
+
+.left-side-order {
+  padding: 60px 60px 60px;
+}
+
+.image-order {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  background-image: url(https://thumb.tildacdn.com/tild6637-6366-4235-b135-313233343735/-/resize/600x/-/format/webp/photo.jpg);
+  background-size: cover;
+  transition: all 0.5s ease-out;
+}
+
+
+.hexagon21 {
+  background-color: lime;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  clip-path: $clipPath
+}
+
+.hexagon22 {
+  background-color: lime;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+  clip-path: $clipPath
+}
+
+.image-order:hover {
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.clipPath {
+  clip-path: $clipPath
+}
+
+.bg-lime {
+  background-color: lime;
+}
+
+.image-discount {
+  position: relative;
+}
+
+.image-discount-block {
+  position: absolute;
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -20px;
+  clip-path: $clipPath;
+  background-color: lime !important;
+}
+
+.text-color {
+  color: lime !important;
+}
+
+.bg-color {
+  background-color: lime !important;
+}
+
+.count-research-hexagon,
+.count-laboratory-hexagon {
+  width: 140px;
+  height: 140px;
+  clip-path: $clipPath;
+  background-color: PaleGreen;
+  color: black;
+  font-size: 40px;
+}
+
+.count-specialist-hexagon {
+  width: 200px;
+  height: 200px;
+  clip-path: $clipPath;
+  background-color: lime;
+  color: white;
+  font-size: 60px;
+}
+
+.priority-left-block,
+.priority-right-block {
+  width: 50%;
+}
+
+.priority-image {
+  width: 500px;
+  height: 300px;
+}
+
+.slick-prev{
+  width: 50px;
+}
+
+.btn-next, .btn-prev{
+  color: lime;
+}
+
+@media screen and (max-width: 1200px) {
+  .image-order {
+    width: 400px;
+    height: 250px;
+  }
+
+  .priority-image {
+    width: 400px;
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .hexagon5 {
+    display: none;
+  }
+
+  .hexagon4 {
+    right: 0px;
+  }
+
+  .hexagon3 {
+    right: 200px;
+  }
+
+  .hexagon2 {
+    right: 560px;
+  }
+
+  .hexagon6 {
+    display: none;
+  }
+
+  .hexagon1 {
+    display: none;
+  }
+
+  .left-side-order,
+  .right-side-order {
+    width: 100%;
+  }
+
+  .left-side-order {
+    padding: 30px 60px 0;
+  }
+
+  .priority-left-block, .priority-right-block{
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .hexagon3 {
+    display: none;
+  }
+
+  .hexagon2 {
+    right: 360px;
+  }
+
+  .hexagon4 {
+    top: 150px;
+  }
+
+  .first-block {
+    height: 420px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .hexagon4 {
+    right: 0px;
+  }
+
+  .hexagon2 {
+    left: 0;
+  }
+
+  .right-side-order {
+    display: none;
+  }
+
+  .priority-image{
+    display: none;
+  }
+ 
+}
+
+.social__text-links{
+display: flex !important;
+align-items: center !important;
+justify-content: center;
+padding-top: 10px;
+}
+
+.social__text-link{
+  text-decoration: none;
+  color: white;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: lime;
+  border-radius: 15px;
+  z-index: 0;
+}

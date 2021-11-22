@@ -1,0 +1,21 @@
+
+.packages-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-style{
+    margin: 20px;
+    width: 350px;
+    height: 480px;
+  }
+
+  .btn-success{
+      background-color: lime ;
+  }
+
+  .text-color-lime{
+      color: lime !important;
+  }

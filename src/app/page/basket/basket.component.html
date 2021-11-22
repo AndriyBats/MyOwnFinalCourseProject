@@ -1,0 +1,87 @@
+<div class="container" *ngIf="basket.length > 0">
+  <div class="row">
+    <div class="col-6">
+      <form class="right-block-object-call gap-2 d-grid" [formGroup]="orderForm" (ngSubmit)="confirmOrder()">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">ПІП або Назвa компанії: *</label>
+          <input type="text" class="form-control" formControlName="companyName" id="exampleFormControlInput1" placeholder="ПІП або Назва компанії" [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }" />
+          <div *ngIf="submitted && f.companyName.errors" class="invalid-feedback">
+            <div *ngIf="f.companyName.errors.required">Вкажіть назву компанії або ПІП</div>
+            <div *ngIf="f.companyName.errors.minlength">Вкажіть повну назву компанії </div>
+            <div *ngIf="f.companyName.errors.maxlength">Назва не повинна перевищувати 30 символів</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Контактна особа: *</label>
+          <input type="text" class="form-control" formControlName="firstAndLastName" id="exampleFormControlInput2"  placeholder="ПІП"  [ngClass]="{ 'is-invalid': submitted && f.firstAndLastName.errors }" />
+          <div *ngIf="submitted && f.firstAndLastName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstAndLastName.errors.required">Вкажіть своє прізвище, ім'я, по-батькові</div>
+            <div *ngIf="f.firstAndLastName.errors.minlength">Вкажіть повне ПІП </div>
+            <div *ngIf="f.firstAndLastName.errors.maxlength">ПІП не повинно перевищувати 30 символів</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label">Телефон: *</label>
+          <input type="text" class="form-control" formControlName="phoneNumber" id="exampleFormControlInput3"  placeholder="Телефон"  [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }" />
+          <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+            <div *ngIf="f.phoneNumber.errors.required">Вкажіть номер телефону</div>
+            <div *ngIf="f.phoneNumber.errors.pattern">Формат номеру телефону невірний</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput4" class="form-label">Email: *</label>
+          <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput4"  placeholder="Електронна адреса"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Вкажіть електронну адресу</div>
+            <div *ngIf="f.email.errors.email">Формат електронної адреси невірний</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success mx-2"> Відправити замовлення</button>
+      </form>
+    </div>
+
+    <div class="col-6 right-block-object-call">
+      <table class="table table-striped table-hover">
+        <thead>
+          <th>Аналізи</th>
+          <th>Кількість</th>
+          <th>Ціна</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let analyz of basket">
+            <td>
+              <span>{{analyz.analyzName}}</span>
+            </td>
+            <td>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-success rounded-pill fs-6 mx-1 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;" (click)="changeCount(analyz, false)"> - </button>
+                    <div class="border border-success rounded-pill fs-5 d-flex justify-content-center align-items-center"
+                      style="width: 40px; height: 40px;">{{analyz.count}}</div>
+                    <button class="btn btn-outline-success rounded-pill fs-6 mx-1 d-flex justify-content-center align-items-center" style="width: 25px; height: 25px;" (click)="changeCount(analyz, true)"> + </button>
+                  </div>
+            </td>
+            <td>
+                <p class="fw-bold" *ngIf="optionPrice === 1"> {{ analyz.priceOption1 * analyz.count}} грн.</p>
+                <p class="fw-bold" *ngIf="optionPrice === 2"> {{ analyz.priceOption2 * analyz.count}} грн.</p>
+                <p class="fw-bold" *ngIf="optionPrice === 3"> {{ analyz.priceOption3 * analyz.count}} грн.</p>
+                <p class="fw-bold" *ngIf="optionPrice === 4"> {{ analyz.priceOption4 * analyz.count}} грн.</p>
+              
+            </td>
+            <td>
+                <i class="bi bi-trash-fill text-success mx-1" (click)="deleteAnalyz(analyz)"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center my-3">
+        <span class="fw-bold"> Разом:</span> {{total}} грн.
+        <i class="bi bi-trash-fill text-success mx-1" (click)="removeBasket()"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="min-height: 220px;" *ngIf="basket.length === 0 && basketArrival.length === 0">
+  <h1>Кошик порожній</h1>
+  <a [routerLink]="['/']">На головну</a>
+</div>

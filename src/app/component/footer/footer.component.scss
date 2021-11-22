@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+}
+
+.bg-color-lime{
+    background-color: lime !important;
+}
+.btn-outline-lime{
+    border: 1px solid DarkGreen;
+}
+
+.btn-outline-lime:hover{
+    background-color: lime !important;
+}
+
+.logo{
+    color: limegreen;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.canvas-top-li{
+     box-shadow: none;
+}
+
+.background-footer{
+    background-color: LightCyan;
+}

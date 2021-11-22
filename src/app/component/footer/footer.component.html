@@ -1,0 +1,38 @@
+<div class="background-footer">
+  <div class="container ">
+    <hr>
+    <div class="container d-flex justify-content-around flex-wrap">
+      <div class="canvas-top-first d-flex flex-column " style="width: 30%;">
+        <p class="fs-5 fw-bold" >Послуги</p>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/analyzes-and-cost' ]" >Аналізи і ціни</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/object-call' ]" >Виклик на об'єкт</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/discounts' ]" >Акції</a>
+      </div>
+      <div class="canvas-top-second  d-flex flex-column" style="width: 30%;">
+        <p class="fs-5 fw-bold">Клієнтам</p>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/profile' ]" >Особистий кабінет</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/research-package' ]" >Популярні пакети випробувань</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/news' ]" >Новини</a>
+      </div>
+      <div class="canvas-top-second  d-flex flex-column" style="width: 30%;"> 
+        <p class="fs-5 fw-bold">Лабораторії</p>
+        <a class="btn text-start canvas-top-li fs-6 " >Про нас</a>
+        <a class="btn text-start canvas-top-li fs-6 " >Обладнання</a>
+        <a class="btn text-start canvas-top-li fs-6 " >Методи випробувань</a>
+      </div>
+    </div>
+    <div class="list"></div>
+    <hr>
+    <div class="d-flex justify-content-between flex-wrap">
+      <a class="navbar-brand p-0 logo">Fuel Test Center</a>
+      <div class="d-flex justify-content-end flex-wrap">
+        <button  [routerLink]="[ '/contract' ]" routerLinkActive="active" class="btn btn-outline-lime m-2">Договір публічної оферти</button>
+        <button  [routerLink]="[ '/object-call' ]" routerLinkActive="active" class="btn bg-color-lime m-2">Виклик на об'єкт</button>
+      </div>
+    </div>
+    <hr>
+    <p>© 2021 FTC. Всі права захищені. Заборонено використання матеріалів сайту без згоди його авторів і зворотнього
+      посилання.</p>
+  </div>
+  
+</div>

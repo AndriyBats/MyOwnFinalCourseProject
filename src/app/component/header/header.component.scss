@@ -1,0 +1,124 @@
+.header-fixed {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  border-bottom: 1px solid lightgray;
+}
+
+.logo {
+  color: limegreen;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-block {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.sign-up-block {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+
+  transition: all 0.5s;
+  background-color: white;
+  z-index: 3;
+}
+
+.sign-up-block-show {
+  left: 0;
+}
+
+.text-color {
+  color: lime !important;
+}
+
+.succees {
+  color: lime;
+}
+
+.btn {
+  box-shadow: none;
+}
+
+.cabinet {
+  font-weight: 700;
+}
+
+.cabinet:hover,
+.btn-login:hover,
+.basket:hover {
+  color: lime;
+  text-decoration: underline;
+}
+
+
+.offcanvastop {
+  position: absolute;
+  top: -160px;
+  width: 100%;
+  height: 200px;
+  transition: all 0.5s;
+}
+
+.offcanvastop-down {
+  top: 60px;
+}
+
+.canvas-top-li {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+.block-scroll {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+.button-scroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  transition: all 0.2s ease-out;
+  color: lime;
+}
+
+.button-scroll:hover {
+  transform: scale(1.1) translate(-50%, -50%);
+  border: 1px solid gray;
+}
+
+.btn-success {
+  background-color: lime;
+}
+
+.btn-outline-success:hover {
+  background-color: lime;
+}
+
+.ofl-scroll{
+  overflow-x: hidden; 
+}
+

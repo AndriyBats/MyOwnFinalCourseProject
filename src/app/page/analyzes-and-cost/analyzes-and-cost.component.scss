@@ -1,0 +1,53 @@
+.analyz-details {
+  margin: 10px 0;
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: all 0.5s ease-out;
+  background-color: white;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side {
+  display: flex;
+}
+
+p {
+  margin: 0;
+}
+
+.hover:hover {
+  font-weight: 700;
+}
+
+.nav-link {
+  width: 150px;
+  text-align: center;
+}
+
+.active {
+  border-bottom: 1px solid green;
+  font-weight: 700;
+}
+
+.analyz-details:hover {
+  transform: scale(1.02);
+}
+
+.btn-outline-success,
+.border-success {
+  border: 1px solid lime !important;
+}
+
+.btn-outline-success:hover {
+  background-color: lime;
+}

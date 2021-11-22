@@ -1,0 +1,105 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="searchWord">
+    <button data-bs-toggle="modal" data-bs-target="#analyzModal" class="btn btn-outline-secondary"
+            type="button">Додати аналіз
+    </button>
+  </div>
+  <hr>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Параметр</th>
+      <th scope="col">Метод випробування</th>
+      <th scope="col">Варіант 1</th>
+      <th scope="col">Варіант 2</th>
+      <th scope="col">Варіант 3</th>
+      <th scope="col">Варіант 4</th>
+      <th scope="col">Редагувати</th>
+      <th scope="col">Видалити</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let analyz of adminAnalyzes | search: searchWord">
+      <td>{{ analyz.id }}</td>
+      <td>{{ analyz.analyzName }}</td>
+      <td>{{ analyz.testMethod }}</td>
+      <td>{{ analyz.priceOption1 }}</td>
+      <td>{{ analyz.priceOption2 }}</td>
+      <td>{{ analyz.priceOption3 }}</td>
+      <td>{{ analyz.priceOption4 }}</td>
+      <td>
+        <button
+        (click)="editAnalyz(analyz)"
+        data-bs-toggle="modal"
+        data-bs-target="#analyzModal"
+        class="btn btn-outline-warning mx-3 rounded-pill">
+      <i class="bi bi-pencil-fill"></i>
+      </button>
+      </td>
+       <td>
+        <button
+        (click)="deleteAnalyz(analyz)"
+        class="btn btn-outline-danger rounded-pill">
+      <i class="bi bi-trash-fill"></i>
+      </button>
+       </td>
+    </tr>
+    </tbody>
+  </table>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="analyzModal" tabindex="-1" aria-labelledby="analyzModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <form [formGroup]="analyzForm" class="modal-content" (ngSubmit)="saveAnalyz()">
+        <div class="modal-header">
+          <h5 class="modal-title" *ngIf="!editStatus" id="analyzModalLabel">Додайте аналіз</h5>
+          <h5 class="modal-title" *ngIf="editStatus" id="analyzModalLabel">Відредагуйте аналіз</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">Параметр:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="analyzName">
+              </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="path" class="col-sm-2 col-form-label">Метод випробування:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="testMethod">
+              </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="path" class="col-sm-2 col-form-label">Варіант 1:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" formControlName="priceOption1">
+              </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="path" class="col-sm-2 col-form-label">Варіант 2:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" formControlName="priceOption2">
+              </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="path" class="col-sm-2 col-form-label">Варіант 3:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" formControlName="priceOption3">
+              </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="path" class="col-sm-2 col-form-label">Варіант 4:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" formControlName="priceOption4">
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" #close>Закрити</button>
+          <button type="submit" class="btn btn-primary" [disabled]="analyzForm.invalid">Зберегти</button>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Введіть назва випробування" aria-label="Recipient's username"
+      [(ngModel)]="searchWord" aria-describedby="button-addon2">
+  </div>
+  <hr>
+  <nav class="nav">
+    <p class="nav-link hover" [ngClass]="{'active': optionPrice === 1}">Варіант 1</p>
+    <p class="nav-link hover" [ngClass]="{'active': optionPrice === 2}">Варіант 2</p>
+    <p class="nav-link hover" [ngClass]="{'active': optionPrice === 3}">Варіант 3</p>
+    <p class="nav-link hover" [ngClass]="{'active': optionPrice === 4}">Варіант 4</p>
+  </nav>
+  <hr>
+  <div class="analyz-details " *ngFor="let analyz of pageAnalyzes | search: searchWord">
+    <div class="left-side my-1" style="width: 200px;">
+      <i class="bi bi-dot text-success fs-4"></i>
+      <div class="div">
+        <p class="text-uppercase">Назва випробування</p>
+        <p class="fw-bold">{{analyz.analyzName}}</p>
+      </div>
+    </div>
+    <div class="my-1">
+      <p class="text-uppercase">Метод випробування</p>
+      <p class="fw-bold">{{analyz.testMethod}}</p>
+    </div>
+    <div class="my-1">
+      <p class="text-uppercase">Ціна</p>
+      <p class="fw-bold" *ngIf="optionPrice === 1">{{ (analyz.priceOption1 * analyz.count) | number: '2.2-2' }} грн.</p>
+      <p class="fw-bold" *ngIf="optionPrice === 2">{{ analyz.priceOption2 * analyz.count | number: '2.2-2'  }} грн.</p>
+      <p class="fw-bold" *ngIf="optionPrice === 3">{{ analyz.priceOption3 * analyz.count | number: '2.2-2' }} грн.</p>
+      <p class="fw-bold" *ngIf="optionPrice === 4">{{ analyz.priceOption4 * analyz.count | number: '2.2-2'  }} грн.</p>
+    </div>
+    <div class="d-flex align-items-center my-1">
+      <button class="btn btn-outline-success rounded-pill fs-5 mx-1 d-flex justify-content-center align-items-center"
+        style="width: 40px;" (click)="changeCount(analyz, false)"> - </button>
+      <div class="border border-success rounded-pill fs-4 d-flex justify-content-center align-items-center"
+        style="width: 60px; height: 60px;">{{analyz.count}}</div>
+      <button class="btn btn-outline-success rounded-pill fs-5 mx-1 d-flex justify-content-center align-items-center"
+        style="width: 40px;" (click)="changeCount(analyz, true)"> + </button>
+        <button class="btn btn-outline-success rounded-pill mx-3 " style="height: 55px;" (click)="addToBasket(analyz)">
+          <i class="bi bi-cart4 fs-3"></i>
+        </button>
+    </div>
+  </div>
+</div>

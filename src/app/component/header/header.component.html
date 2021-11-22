@@ -1,0 +1,196 @@
+<div class="header-fixed bg-light">
+  <div class="offcanvastop bg-light" [ngClass]="{'offcanvastop-down': isOffCanvasTopToDown}">
+    <div class="container d-flex justify-content-around">
+      <div class="canvas-top-first d-flex flex-column ">
+        <p class="fs-5 fw-bold">Послуги</p>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/analyzes-and-cost' ]"
+          (click)="offCanvasTopToTop()">Аналізи і ціни</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/object-call' ]"
+          (click)="offCanvasTopToTop()">Виклик на об'єкт</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/discounts' ]"
+          (click)="offCanvasTopToTop()">Акції</a>
+      </div>
+      <div class="canvas-top-second  d-flex flex-column">
+        <p class="fs-5 fw-bold">Клієнтам</p>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/profile' ]"
+          (click)="offCanvasTopToTop()">Особистий кабінет</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/research-package' ]"
+          (click)="offCanvasTopToTop()">Популярні пакети випробувань</a>
+        <a class="btn text-start canvas-top-li fs-6 " [routerLink]="[ '/news' ]"
+          (click)="offCanvasTopToTop()">Новини</a>
+      </div>
+      <div class="canvas-top-second  d-flex flex-column">
+        <p class="fs-5 fw-bold">Лабораторії</p>
+        <a class="btn text-start canvas-top-li fs-6 " (click)="offCanvasTopToTop()">Про нас</a>
+        <a class="btn text-start canvas-top-li fs-6 " (click)="offCanvasTopToTop()">Обладнання</a>
+        <a class="btn text-start canvas-top-li fs-6 " (click)="offCanvasTopToTop()">Методи випробувань</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 logo" [routerLink]="[ '' ]" routerLinkActive="active">Fuel Test Center</a>
+        <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button class="btn btn-outline-danger mx-1 my-0 py-0 btn-sm" type="button" *ngIf="isAdminLogin"
+              [routerLink]="[ '/admin' ]" routerLinkActive="active">Admin</button>
+          </ul>
+          <form class="d-flex">
+            <button class="btn  mx-1 my-0 py-0 btn-sm cabinet" type="button" [routerLink]="[ '/profile' ]"
+              *ngIf="isUserLogin" routerLinkActive="active" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Залогінуйтеся, щоб зайти в особистий кабінет">
+              <i class="bi bi-building fs-5 mx-2 succees"></i>Мій кабінет</button>
+
+            <button class="btn basket mx-1 my-0 py-0 btn-sm d-flex align-items-center fw-bold" type="button"
+              [routerLink]="[ '/basket' ]" routerLinkActive="active">
+              <i class="bi bi-cart4 mx-2 fs-5 succees"></i>
+              <div>{{countAnalyzes}} аналізів / {{total}} грн. </div>
+            </button>
+            <button class="login fw-bold  btn btn-login" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="bi bi-person-circle fs-5 mx-2 succees"></i>
+              Вхід/Реєстрація</button>
+            <button class="btn " type="button" (click)="offCanvasTopToDown()" *ngIf="!isOffCanvasTopToDown"><i
+                class="bi bi-list fs-5 text-color"></i></button>
+            <button class="btn " type="button" (click)="offCanvasTopToTop()" *ngIf="isOffCanvasTopToDown"><i
+                class="bi bi-x-lg text-color"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<div class="block-scroll" *ngIf="statusButtonScroll">
+  <div class="button-scroll" (click)="scrollToTop()">
+    <i class="bi bi-caret-up-fill fs-1"></i>
+  </div>
+</div>
+
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end ofl-scroll" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="sign-in-block">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" #close></button>
+    </div>
+    <div class="offcanvas-body">
+      <h2 class="fw-4">Вхід</h2>
+
+      <form [formGroup]="registerForm" (ngSubmit)="signIn()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Логін</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            formControlName="email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Пароль</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-success col-12"
+          [disabled]="registerForm.invalid">Увійти</button>
+      </form>
+      <hr>
+      <div class="d-flex">
+        <div class="col-6 my-2">Ви вперше тут?</div>
+        <button type="button" class="btn btn-outline-success col-6" (click)="toSignUp()">Реєстрація</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="sign-up-block" [ngClass]="{'sign-up-block-show': isSignUp}">
+
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" (click)="fromSignUp()" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h2 class="fw-4 my-0">Реєстрація</h2>
+      <div class="register-form">
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+          <div class="form-group">
+            <label>ПІП або Назвa компанії: *</label>
+            <input type="text" formControlName="companyName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }" />
+            <div *ngIf="submitted && f.companyName.errors" class="invalid-feedback">
+              <div *ngIf="f.companyName.errors.required">Вкажіть назву компанії або ПІП</div>
+              <div *ngIf="f.companyName.errors.minlength">Вкажіть повну назву компанії </div>
+              <div *ngIf="f.companyName.errors.maxlength">Назва не повинна перевищувати 30 символів</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Контактна особа: *</label>
+            <input type="text" formControlName="firstAndLastName" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstAndLastName.errors }" />
+            <div *ngIf="submitted && f.firstAndLastName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstAndLastName.errors.required">Вкажіть своє прізвище, ім'я, по-батькові</div>
+              <div *ngIf="f.firstAndLastName.errors.minlength">Вкажіть повне ПІП </div>
+              <div *ngIf="f.firstAndLastName.errors.maxlength">ПІП не повинно перевищувати 30 символів</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Номер телефону: *</label>
+            <input type="text" formControlName="phoneNumber" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }" />
+            <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+              <div *ngIf="f.phoneNumber.errors.required">Вкажіть номер телефону</div>
+              <div *ngIf="f.phoneNumber.errors.pattern">Формат номеру телефону невірний</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Електронна адреса(Логін): *</label>
+            <input type="text" formControlName="email" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Вкажіть електронну адресу</div>
+              <div *ngIf="f.email.errors.email">Формат електронної адреси невірний</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Придумайте пароль: *</label>
+            <input type="password" formControlName="password" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Введіть пароль</div>
+              <div *ngIf="f.password.errors.minlength">Довжина пароля не менше 6 символів</div>
+              <div *ngIf="f.password.errors.maxlength">Довжина пароля не більше 40 символів</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Підтвердіть пароль: *</label>
+            <input type="password" formControlName="confirmPassword" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+            <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+              <div *ngIf="f.confirmPassword.errors.required">Підтвердіть пароль</div>
+              <div *ngIf="f.confirmPassword.errors.matching">Паролі не збігаються</div>
+            </div>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" formControlName="acceptTerms" class="form-check-input"
+              [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+            <label for="acceptTerms" class="form-check-label">Я погоджуюся з умовами реєстрації</label>
+            <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">
+              Необхідно прийняти умови</div>
+          </div>
+
+          <div class="form-group d-flex justify-content-around">
+            <button type="submit" class="btn btn-success col-5">Зареєструватися</button>
+            <button type="button" (click)="onReset()" class="btn btn-warning float-right col-5 mx-1">Очистити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

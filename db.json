@@ -1,0 +1,1134 @@
+{
+  "analyzes": [
+    {
+      "analyzName": "Відбір проб",
+      "testMethod": "ДСТУ 4488",
+      "priceOption1": 192,
+      "priceOption2": 172.8,
+      "priceOption3": 153.6,
+      "priceOption4": 134.4,
+      "count": 1,
+      "id": 1
+    },
+    {
+      "analyzName": "Визначення густини",
+      "testMethod": "ДСТУ ГОСТ 31072",
+      "priceOption1": 90,
+      "priceOption2": 84,
+      "priceOption3": 72,
+      "priceOption4": 66,
+      "count": 1,
+      "id": 2
+    },
+    {
+      "analyzName": "Оформлення результатів",
+      "testMethod": "б/м",
+      "priceOption1": 222,
+      "priceOption2": 198,
+      "priceOption3": 74,
+      "priceOption4": 156,
+      "count": 1,
+      "id": 3
+    },
+    {
+      "analyzName": "Октанове число за дослідним методом",
+      "testMethod": "Методика",
+      "priceOption1": 384,
+      "priceOption2": 348,
+      "priceOption3": 312,
+      "priceOption4": 270,
+      "count": 1,
+      "id": 4
+    },
+    {
+      "analyzName": "Об'ємна частка бензолу",
+      "testMethod": "ASTM D 6277",
+      "priceOption1": 174,
+      "priceOption2": 162,
+      "priceOption3": 144,
+      "priceOption4": 126,
+      "count": 1,
+      "id": 5
+    },
+    {
+      "analyzName": "Вміст насичених вуглеводнів",
+      "testMethod": "Методика",
+      "priceOption1": 276,
+      "priceOption2": 252,
+      "priceOption3": 222,
+      "priceOption4": 198,
+      "count": 1,
+      "id": 6
+    },
+    {
+      "analyzName": "Вміст органічних кисневмісних сполук та масова частка кисню",
+      "testMethod": "ASTM D 5845",
+      "priceOption1": 240,
+      "priceOption2": 216,
+      "priceOption3": 192,
+      "priceOption4": 168,
+      "count": 1,
+      "id": 7
+    },
+    {
+      "analyzName": "Зовнішній вигляд",
+      "testMethod": "ДСТУ 7687:2015 табл. 1 п. 15",
+      "priceOption1": 48,
+      "priceOption2": 48,
+      "priceOption3": 42,
+      "priceOption4": 36,
+      "count": 1,
+      "id": 8
+    },
+    {
+      "analyzName": "Масова частка сірки",
+      "testMethod": "ДСТУ ISO 20847",
+      "priceOption1": 432,
+      "priceOption2": 390,
+      "priceOption3": 348,
+      "priceOption4": 306,
+      "count": 1,
+      "id": 9
+    },
+    {
+      "analyzName": "Об'ємна частка олефінових вуглеводнів",
+      "testMethod": "Методика",
+      "priceOption1": 198,
+      "priceOption2": 180,
+      "priceOption3": 162,
+      "priceOption4": 144,
+      "count": 1,
+      "id": 10
+    },
+    {
+      "analyzName": "Октанове число за моторним методом",
+      "testMethod": "Методика",
+      "priceOption1": 384,
+      "priceOption2": 348,
+      "priceOption3": 312,
+      "priceOption4": 270,
+      "count": 1,
+      "id": 11
+    },
+    {
+      "analyzName": "Об'ємна частка ароматичних вуглеводнів",
+      "testMethod": "Методика",
+      "priceOption1": 144,
+      "priceOption2": 132,
+      "priceOption3": 120,
+      "priceOption4": 102,
+      "count": 1,
+      "id": 12
+    },
+    {
+      "analyzName": "Тиск насиченої пари",
+      "testMethod": "Методика",
+      "priceOption1": 84,
+      "priceOption2": 78,
+      "priceOption3": 72,
+      "priceOption4": 60,
+      "count": 1,
+      "id": 13
+    },
+    {
+      "analyzName": "Фракційний склад",
+      "testMethod": "Методика",
+      "priceOption1": 120,
+      "priceOption2": 108,
+      "priceOption3": 96,
+      "priceOption4": 84,
+      "count": 1,
+      "id": 14
+    },
+    {
+      "analyzName": "Об'ємна частка ефірів жирних кислот",
+      "testMethod": "ДСТУ EN 14078",
+      "priceOption1": 318,
+      "priceOption2": 288,
+      "priceOption3": 258,
+      "priceOption4": 222,
+      "count": 1,
+      "id": 15
+    },
+    {
+      "analyzName": "Масова частка поліциклічних ароматичних вуглеводнів",
+      "testMethod": "Методика",
+      "priceOption1": 210,
+      "priceOption2": 186,
+      "priceOption3": 168,
+      "priceOption4": 144,
+      "count": 1,
+      "id": 16
+    },
+    {
+      "analyzName": "Гранична температура фільтрованості",
+      "testMethod": "ДСТУ EN 116",
+      "priceOption1": 252,
+      "priceOption2": 228,
+      "priceOption3": 204,
+      "priceOption4": 180,
+      "count": 1,
+      "id": 17
+    },
+    {
+      "analyzName": "Температура спалаху в закритому тиглі",
+      "testMethod": "ASTM D 6450",
+      "priceOption1": 288,
+      "priceOption2": 264,
+      "priceOption3": 234,
+      "priceOption4": 204,
+      "count": 1,
+      "id": 18
+    },
+    {
+      "analyzName": "Цетанове число",
+      "testMethod": "Методика",
+      "priceOption1": 384,
+      "priceOption2": 348,
+      "priceOption3": 312,
+      "priceOption4": 270,
+      "count": 1,
+      "id": 19
+    },
+    {
+      "analyzName": "Цетоновий індекс",
+      "testMethod": "ГОСТ 27768",
+      "priceOption1": 162,
+      "priceOption2": 144,
+      "priceOption3": 132,
+      "priceOption4": 114,
+      "count": 1,
+      "id": 20
+    }
+  ],
+  "discounts": [
+    {
+      "discountName": "Більше 10-и проб",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Fimages.jpg.jpg?alt=media&token=fda891e7-d740-4dba-b751-3488a4a60fcc",
+      "valueDiscount": "-10%",
+      "description": "При замовленні випробувань більше 10-и проб одночасно, отримуєте знижку 10%. Наприклад, при замовленні випробувань визначення вмісту сірки в 10-и пробах платите 3900,00 грн. замість 4320,00 грн.",
+      "price": "3900,00",
+      "validityPeriod": "31.12.2021",
+      "id": 1
+    },
+    {
+      "discountName": "Більше 20-и проб",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Fimages%20(1).jpg.jpg?alt=media&token=1ba1b881-98e8-40ea-9e6e-34dd65c07b7c",
+      "valueDiscount": "-20%",
+      "description": "При замовленні випробувань більше 20-и проб одночасно, отримуєте знижку 20%. Наприклад, при замовленні випробувань визначення граничної температури фільтрування в більше 20-и пробах платите 4560,00 грн. замість 5040,00 грн.",
+      "price": "4560,00",
+      "validityPeriod": "31.03.2022",
+      "id": 2
+    },
+    {
+      "discountName": "VIP-клієнт",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2FVIP_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_3.png.png?alt=media&token=10ddf975-bba5-4f0e-92a1-63675def1f09",
+      "valueDiscount": "-30%",
+      "description": "Знижка 30% надається VIP-клієнтам згідно договору, в якому прописується обсяг робіт на рік",
+      "price": "100000",
+      "validityPeriod": "31.12.2021",
+      "id": 3
+    },
+    {
+      "discountName": "Новорічна акція",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2FShar.png.png?alt=media&token=510b189d-5095-48c6-8e5f-e58857019fb4",
+      "valueDiscount": "~10%",
+      "description": "При замовленні будь якого комплексного дослідження випробування густини нафтопродукту у подарунок",
+      "price": "- 90",
+      "validityPeriod": "31.01.2022",
+      "id": 4
+    }
+  ],
+  "research-packages": [
+    {
+      "researchPackageName": "Визначення якості бензину в Мобільній лабораторії",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Fimage013.jpg.jpg?alt=media&token=71c234a7-bf94-4578-a8b3-2d914d2c3384",
+      "mainIndicators": "Октанове число, сірка",
+      "numberOfTickets": "14",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Відбір проб",
+            "testMethod": "ДСТУ 4488",
+            "priceOption1": 192,
+            "priceOption2": 172.8,
+            "priceOption3": 153.6,
+            "priceOption4": 134.4,
+            "count": 1,
+            "id": 1
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Визначення густини",
+            "testMethod": "ДСТУ ГОСТ 31072",
+            "priceOption1": 90,
+            "priceOption2": 84,
+            "priceOption3": 72,
+            "priceOption4": 66,
+            "count": 1,
+            "id": 2
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Об'ємна частка бензолу",
+            "testMethod": "ASTM D 6277",
+            "priceOption1": 174,
+            "priceOption2": 162,
+            "priceOption3": 144,
+            "priceOption4": 126,
+            "count": 1,
+            "id": 5
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Вміст насичених вуглеводнів",
+            "testMethod": "Методика",
+            "priceOption1": 276,
+            "priceOption2": 252,
+            "priceOption3": 222,
+            "priceOption4": 198,
+            "count": 1,
+            "id": 6
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Вміст органічних кисневмісних сполук та масова частка кисню",
+            "testMethod": "ASTM D 5845",
+            "priceOption1": 240,
+            "priceOption2": 216,
+            "priceOption3": 192,
+            "priceOption4": 168,
+            "count": 1,
+            "id": 7
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Зовнішній вигляд",
+            "testMethod": "ДСТУ 7687:2015 табл. 1 п. 15",
+            "priceOption1": 48,
+            "priceOption2": 48,
+            "priceOption3": 42,
+            "priceOption4": 36,
+            "count": 1,
+            "id": 8
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка сірки",
+            "testMethod": "ДСТУ ISO 20847",
+            "priceOption1": 432,
+            "priceOption2": 390,
+            "priceOption3": 348,
+            "priceOption4": 306,
+            "count": 1,
+            "id": 9
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Об'ємна частка олефінових вуглеводнів",
+            "testMethod": "Методика",
+            "priceOption1": 198,
+            "priceOption2": 180,
+            "priceOption3": 162,
+            "priceOption4": 144,
+            "count": 1,
+            "id": 10
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Октанове число за дослідним методом",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 4
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Октанове число за моторним методом",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 11
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Об'ємна частка ароматичних вуглеводнів",
+            "testMethod": "Методика",
+            "priceOption1": 144,
+            "priceOption2": 132,
+            "priceOption3": 120,
+            "priceOption4": 102,
+            "count": 1,
+            "id": 12
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Тиск насиченої пари",
+            "testMethod": "Методика",
+            "priceOption1": 84,
+            "priceOption2": 78,
+            "priceOption3": 72,
+            "priceOption4": 60,
+            "count": 1,
+            "id": 13
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Фракційний склад",
+            "testMethod": "Методика",
+            "priceOption1": 120,
+            "priceOption2": 108,
+            "priceOption3": 96,
+            "priceOption4": 84,
+            "count": 1,
+            "id": 14
+          }
+        }
+      ],
+      "price": 2988,
+      "id": 1
+    },
+    {
+      "researchPackageName": "\tВизначення якості дизельного палива в Мобільній лабораторії",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2F3cb15a0a57c77f46646d7e215d9a0419-1359x1100.jpg.jpg?alt=media&token=0613fe59-e587-472f-96ba-f1e96bada201",
+      "mainIndicators": "Вміст сірки, температура спалаху в закритому тиглі, гранична температура фівльтрованості, цетанове число",
+      "numberOfTickets": "11",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Відбір проб",
+            "testMethod": "ДСТУ 4488",
+            "priceOption1": 192,
+            "priceOption2": 172.8,
+            "priceOption3": 153.6,
+            "priceOption4": 134.4,
+            "count": 1,
+            "id": 1
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Визначення густини",
+            "testMethod": "ДСТУ ГОСТ 31072",
+            "priceOption1": 90,
+            "priceOption2": 84,
+            "priceOption3": 72,
+            "priceOption4": 66,
+            "count": 1,
+            "id": 2
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Об'ємна частка ефірів жирних кислот",
+            "testMethod": "ДСТУ EN 14078",
+            "priceOption1": 318,
+            "priceOption2": 288,
+            "priceOption3": 258,
+            "priceOption4": 222,
+            "count": 1,
+            "id": 15
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка поліциклічних ароматичних вуглеводнів",
+            "testMethod": "Методика",
+            "priceOption1": 210,
+            "priceOption2": 186,
+            "priceOption3": 168,
+            "priceOption4": 144,
+            "count": 1,
+            "id": 16
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Гранична температура фільтрованості",
+            "testMethod": "ДСТУ EN 116",
+            "priceOption1": 252,
+            "priceOption2": 228,
+            "priceOption3": 204,
+            "priceOption4": 180,
+            "count": 1,
+            "id": 17
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка сірки",
+            "testMethod": "ДСТУ ISO 20847",
+            "priceOption1": 432,
+            "priceOption2": 390,
+            "priceOption3": 348,
+            "priceOption4": 306,
+            "count": 1,
+            "id": 9
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Температура спалаху в закритому тиглі",
+            "testMethod": "ASTM D 6450",
+            "priceOption1": 288,
+            "priceOption2": 264,
+            "priceOption3": 234,
+            "priceOption4": 204,
+            "count": 1,
+            "id": 18
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Фракційний склад",
+            "testMethod": "Методика",
+            "priceOption1": 120,
+            "priceOption2": 108,
+            "priceOption3": 96,
+            "priceOption4": 84,
+            "count": 1,
+            "id": 14
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Цетанове число",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 19
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Цетоновий індекс",
+            "testMethod": "ГОСТ 27768",
+            "priceOption1": 162,
+            "priceOption2": 144,
+            "priceOption3": 132,
+            "priceOption4": 114,
+            "count": 1,
+            "id": 20
+          }
+        }
+      ],
+      "price": 2670,
+      "id": 2
+    },
+    {
+      "researchPackageName": "\tВиїзд на місце проведення аналізу",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Funnamed%20(1).png.png?alt=media&token=d65da625-beeb-49e1-8a7f-6275fa25ee48",
+      "mainIndicators": "Вартість доїзду складає вартість на місце проведення аналізу і назад на місце дислокації автомобіля",
+      "numberOfTickets": "1",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        }
+      ],
+      "price": 24,
+      "id": 3
+    },
+    {
+      "researchPackageName": "Визначення якості бензину в Стаціонарній лабораторії",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2F164946_original.jpg.jpg?alt=media&token=86463f31-b477-425a-a519-09254c9eadfb",
+      "mainIndicators": "\tОктанове число, вміст сірки, густина, об'ємна частка ароматичних сполук, корозійна стійкість",
+      "numberOfTickets": "10",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Відбір проб",
+            "testMethod": "ДСТУ 4488",
+            "priceOption1": 192,
+            "priceOption2": 172.8,
+            "priceOption3": 153.6,
+            "priceOption4": 134.4,
+            "count": 1,
+            "id": 1
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Визначення густини",
+            "testMethod": "ДСТУ ГОСТ 31072",
+            "priceOption1": 90,
+            "priceOption2": 84,
+            "priceOption3": 72,
+            "priceOption4": 66,
+            "count": 1,
+            "id": 2
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Об'ємна частка бензолу",
+            "testMethod": "ASTM D 6277",
+            "priceOption1": 174,
+            "priceOption2": 162,
+            "priceOption3": 144,
+            "priceOption4": 126,
+            "count": 1,
+            "id": 5
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Вміст органічних кисневмісних сполук та масова частка кисню",
+            "testMethod": "ASTM D 5845",
+            "priceOption1": 240,
+            "priceOption2": 216,
+            "priceOption3": 192,
+            "priceOption4": 168,
+            "count": 1,
+            "id": 7
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Зовнішній вигляд",
+            "testMethod": "ДСТУ 7687:2015 табл. 1 п. 15",
+            "priceOption1": 48,
+            "priceOption2": 48,
+            "priceOption3": 42,
+            "priceOption4": 36,
+            "count": 1,
+            "id": 8
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка сірки",
+            "testMethod": "ДСТУ ISO 20847",
+            "priceOption1": 432,
+            "priceOption2": 390,
+            "priceOption3": 348,
+            "priceOption4": 306,
+            "count": 1,
+            "id": 9
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Октанове число за дослідним методом",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 4
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Октанове число за моторним методом",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 11
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Фракційний склад",
+            "testMethod": "Методика",
+            "priceOption1": 120,
+            "priceOption2": 108,
+            "priceOption3": 96,
+            "priceOption4": 84,
+            "count": 1,
+            "id": 14
+          }
+        }
+      ],
+      "price": 2892,
+      "id": 4
+    },
+    {
+      "researchPackageName": "Визначення якості дизельного палива в Стаціонарній лабораторії",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Funnamed.jpg.jpg?alt=media&token=820b3d82-f242-49c4-9481-9b3e434bac33",
+      "mainIndicators": "Густина, вміст сірки, тнмпература спалаху в закритому тиглі, вязкість",
+      "numberOfTickets": "8",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Відбір проб",
+            "testMethod": "ДСТУ 4488",
+            "priceOption1": 192,
+            "priceOption2": 172.8,
+            "priceOption3": 153.6,
+            "priceOption4": 134.4,
+            "count": 1,
+            "id": 1
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Визначення густини",
+            "testMethod": "ДСТУ ГОСТ 31072",
+            "priceOption1": 90,
+            "priceOption2": 84,
+            "priceOption3": 72,
+            "priceOption4": 66,
+            "count": 1,
+            "id": 2
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Гранична температура фільтрованості",
+            "testMethod": "ДСТУ EN 116",
+            "priceOption1": 252,
+            "priceOption2": 228,
+            "priceOption3": 204,
+            "priceOption4": 180,
+            "count": 1,
+            "id": 17
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка сірки",
+            "testMethod": "ДСТУ ISO 20847",
+            "priceOption1": 432,
+            "priceOption2": 390,
+            "priceOption3": 348,
+            "priceOption4": 306,
+            "count": 1,
+            "id": 9
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Температура спалаху в закритому тиглі",
+            "testMethod": "ASTM D 6450",
+            "priceOption1": 288,
+            "priceOption2": 264,
+            "priceOption3": 234,
+            "priceOption4": 204,
+            "count": 1,
+            "id": 18
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Фракційний склад",
+            "testMethod": "Методика",
+            "priceOption1": 120,
+            "priceOption2": 108,
+            "priceOption3": 96,
+            "priceOption4": 84,
+            "count": 1,
+            "id": 14
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Цетоновий індекс",
+            "testMethod": "ГОСТ 27768",
+            "priceOption1": 162,
+            "priceOption2": 144,
+            "priceOption3": 132,
+            "priceOption4": 114,
+            "count": 1,
+            "id": 20
+          }
+        }
+      ],
+      "price": 1956,
+      "id": 5
+    },
+    {
+      "researchPackageName": "Визначення якості зрідженого газу в Стаціонарній лабораторії",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2F615747822a46b.jpg.webp.webp?alt=media&token=4f241eda-86ef-4b04-b584-f94aba1eabad",
+      "mainIndicators": "Октанове число, вміст води, компонентний склад, вміст сірки",
+      "numberOfTickets": "6",
+      "tickets": [
+        {
+          "name": {
+            "analyzName": "Відбір проб",
+            "testMethod": "ДСТУ 4488",
+            "priceOption1": 192,
+            "priceOption2": 172.8,
+            "priceOption3": 153.6,
+            "priceOption4": 134.4,
+            "count": 1,
+            "id": 1
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Оформлення результатів",
+            "testMethod": "б/м",
+            "priceOption1": 222,
+            "priceOption2": 198,
+            "priceOption3": 74,
+            "priceOption4": 156,
+            "count": 1,
+            "id": 3
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Визначення густини",
+            "testMethod": "ДСТУ ГОСТ 31072",
+            "priceOption1": 90,
+            "priceOption2": 84,
+            "priceOption3": 72,
+            "priceOption4": 66,
+            "count": 1,
+            "id": 2
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Масова частка сірки",
+            "testMethod": "ДСТУ ISO 20847",
+            "priceOption1": 432,
+            "priceOption2": 390,
+            "priceOption3": 348,
+            "priceOption4": 306,
+            "count": 1,
+            "id": 9
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Октанове число за дослідним методом",
+            "testMethod": "Методика",
+            "priceOption1": 384,
+            "priceOption2": 348,
+            "priceOption3": 312,
+            "priceOption4": 270,
+            "count": 1,
+            "id": 4
+          }
+        },
+        {
+          "name": {
+            "analyzName": "Вміст насичених вуглеводнів",
+            "testMethod": "Методика",
+            "priceOption1": 276,
+            "priceOption2": 252,
+            "priceOption3": 222,
+            "priceOption4": 198,
+            "count": 1,
+            "id": 6
+          }
+        }
+      ],
+      "price": 7968,
+      "id": 6
+    }
+  ],
+  "news": [
+    {
+      "newsName": "ПОЧАЛА ПРАЦЮВАТИ ДРУГА МОБІЛЬНА ЛАБОРАТОРІЯ",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Funnamed%20(1).jpg.jpg?alt=media&token=0965c325-367e-408b-95f4-e508350bf63e",
+      "description": "У новій лабораторії було розширено лінійку приладів, порівно з першою лабораторією. Тепер експрес-контроль за якістю бензину та дизельного пального здійснюватимуть на чотирьох вимірювальних приладах від австрійського виробника «Grabner Instruments» та японської фірми «Tanaka». \nОбладнання нової лабораторії дозволяє визначати якість бензину за 30-ма параметрами. У новій мобільній лабораторії значно розширено спектр аналізу дизельного пального. Тривалість експрес-аналізу бензину та дизельного пального на відповідність ДСТУ становить 10-15 хвилин.\nМобільна лабораторія може здійснювати експрес-контроль за якістю нафтопродуктів у будь-якій точці України. Завдяки своїй здатності швидко пересуватися країною, лабораторія надає послуги не лише мережі АЗК «ОККО», а й пропонує пакет пропозицій для сторонніх споживачів. ",
+      "id": 1
+    },
+    {
+      "newsName": "ЯК КЛІЄНТИ ТЕСТУВАЛИ ПАЛЬНЕ НА АЗК",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2F12045740_10153616143917346_1556901049342421081_o.jpg.jpg?alt=media&token=710ae128-6940-4c9b-801d-18b6913e15bf",
+      "description": "«Бережи машину – заправляй якісне», – з таким меседжем мережа АЗК  звернулись до водіїв, щоб вкотре нагадати: робота автомобіля напряму залежить від якості пального, яким ви заправляєтесь.\n\nЩоб підкріпити слова – діями, АЗК провело унікальну на ринку активність, запропонувавши своїм клієнтам побачити на власні очі, як ретельно тут слідкують за якістю пального.\n\n Під час цього клієнти цього з інженерами мобільних лабораторій відбирали проби та слідкували за експрес-аналізаторами. Важливо було не лише показати клієнтам процес перевірки, а й максимально пояснити, що означає і як впливає на роботу авто кожен показник.\n\nЗагалом тестування тривали 10 робочих днів. За цей час чотирьом лабораторіям вдалось охопити 77 АЗК у 8 містах України. Тож можливістю перевірити якість пального на АЗК скористалось близько 350 клієнтів.",
+      "id": 2
+    },
+    {
+      "newsName": "УСІ ЛАБОРАТОРІЇ ЯКОСТІ АКРЕДИТовані ЗА ЄС",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Flab-2-11353.jpg.jpg?alt=media&token=a72c22a4-7453-4bb7-817c-7f6af5c01edf",
+      "description": "Центр паливних випробувань TFС акредитував усі свої 12 випробувальних лабораторій з контролю якості нафтопродуктів за європейським стандартом ISO/IEC 17025:2006 «Загальні вимоги до компетентності випробувальних та калібрувальних лабораторій.\n\n«Ми зробили цей важливий крок у контексті підписання угоди про асоціацію між Україною та ЄС і гармонізації українського законодавства з європейським. Унікальність цього кроку ще й у тому, що ми акредитували не одну, або дві, а одночасно всі лабораторії, що обслуговують мережу АЗК.\n\nТаким чином, тепер усі без винятку випробувальні лабораторії, що працюють у структурі,    мають право не тільки проводити вимірювання, а й надавати висновки щодо відповідності нафтопродуктів стандартам, здійснювати сертифікаційні та арбітражні випробування. Новий рівень акредитації дозволить лабораторіям компанії залучити більший обсяг зовнішніх замовлень.\n\nПаралельно Центр паливних випробувань TFC (Testing Fuel Center) зміцнив і свою технічну базу. Першим в Україні він закупив два найсучасніших експрес-аналізатори бензину й дизпалива MiniscanIRXpert виробництва австрійської фірми Grabner Instruments, які встановлено в лабораторіях у Львові та у Гребінках під Києвом. Ці прилади здатні за 5 хвилин проаналізувати зразок нафтопродукту більш як за 30 параметрами. «Нова техніка дає найвищу точність замірів серед усіх аналогів, представлених в Україні. До речі, вартість такого приладу співмірна з вартістю автомобіля представницького класу».\n\nНині до складу Центру паливних випробувань TFC входить 11 стаціонарних лабораторій: 3 – у Львівській області, по одній – у Рівненській, Дніпропетровській, Хмельницькій, Закарпатській, Івано-Франківській, Київській, Вінницькій і Харківській областях, а також 4 мобільних лабораторії, об’єднані в окремий лабораторний підрозділ.",
+      "id": 3
+    },
+    {
+      "newsName": "ЛАБОРАТОРІЇ ВІДЗНАЧИЛИСЯ НА КОНКУРСІ «100 КРАЩИХ ТОВАРІВ УКРАЇНИ»",
+      "imagePath": "https://firebasestorage.googleapis.com/v0/b/laboratory-f4f6f.appspot.com/o/images%2Ftop100.png.png?alt=media&token=aeb47063-7eae-44d2-a09e-c34ff4080655",
+      "description": "Центр паливних випробувань TFC став переможцем Львівського регіонального етапу конкурсу «100 кращих товарів України» у номінації «Послуги з аналізу якості нафтопродуктів». 2 жовтня керівник Центру отримав спеціальну відзнаку від організаторів конкурсу під час церемонії відкриття виставку-ярмарки «Львівський товаровиробник».\n\nДо складу Центру паливних випробувань TFC входить 11 стаціонарних лабораторій: 3 – у Львівській області, по одній – у Рівненській, Дніпропетровській, Хмельницькій, Закарпатській, Івано-Франківській, Київській, Вінницькій і Харківській областях, а також 4 мобільних лабораторії, об’єднані в окремий лабораторний підрозділ. Усі вони акредитовані за європейським стандартом ISO/IEC 17025:2006 «Загальні вимоги до компетентності випробувальних та калібрувальних лабораторій».\n\n«Щоб гарантувати триступеневий контроль якості пального на АЗК «ОККО», ми створили найсучаснішу в Україні лабораторну базу, яка обслуговує не тільки нашу мережу, а й зовнішніх  клієнтів, - розповідає Алла Сидорович. – Успіх на львівському регіональному етапі конкурсу «100 кращих товарів України» - це визнання нашої фаховості і підтвердження лідерських позицій, які TFC займає на ринку випробувальних послуг».",
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "companyName": "First",
+      "firstAndLastName": "Перший Петро Пилипович",
+      "phoneNumber": "0987654321",
+      "email": "user1@gmail.com",
+      "price": 1656,
+      "optionPrice": 1,
+      "status": "DONE",
+      "basket": [
+        {
+          "analyzName": "Відбір проб",
+          "testMethod": "ДСТУ 4488",
+          "priceOption1": 192,
+          "priceOption2": 172.8,
+          "priceOption3": 153.6,
+          "priceOption4": 134.4,
+          "count": 1,
+          "id": 1
+        },
+        {
+          "analyzName": "Визначення густини",
+          "testMethod": "ДСТУ ГОСТ 31072",
+          "priceOption1": 90,
+          "priceOption2": 84,
+          "priceOption3": 72,
+          "priceOption4": 66,
+          "count": 1,
+          "id": 2
+        },
+        {
+          "analyzName": "Оформлення результатів",
+          "testMethod": "б/м",
+          "priceOption1": 222,
+          "priceOption2": 198,
+          "priceOption3": 74,
+          "priceOption4": 156,
+          "count": 1,
+          "id": 3
+        },
+        {
+          "analyzName": "Октанове число за дослідним методом",
+          "testMethod": "Методика",
+          "priceOption1": 384,
+          "priceOption2": 348,
+          "priceOption3": 312,
+          "priceOption4": 270,
+          "count": 3,
+          "id": 5
+        }
+      ],
+      "id": 1
+    },
+    {
+      "companyName": "Second",
+      "firstAndLastName": "Другий Петро пилипович",
+      "phoneNumber": "0987654321",
+      "email": "user2@gmail.com",
+      "dateArrival": "23/11/2021",
+      "timeArrival": "13.00",
+      "addressArrival": "М. Львів, вул. Б. Хмельницького 275а, кв.25",
+      "amountKilometers": 100,
+      "price": 3732,
+      "optionPrice": 1,
+      "status": "DONE",
+      "basket": [
+        {
+          "analyzName": "Відбір проб",
+          "testMethod": "ДСТУ 4488",
+          "priceOption1": 192,
+          "priceOption2": 172.8,
+          "priceOption3": 153.6,
+          "priceOption4": 134.4,
+          "count": 1,
+          "id": 1
+        },
+        {
+          "analyzName": "Визначення густини",
+          "testMethod": "ДСТУ ГОСТ 31072",
+          "priceOption1": 90,
+          "priceOption2": 84,
+          "priceOption3": 72,
+          "priceOption4": 66,
+          "count": 1,
+          "id": 2
+        },
+        {
+          "analyzName": "Оформлення результатів",
+          "testMethod": "б/м",
+          "priceOption1": 222,
+          "priceOption2": 198,
+          "priceOption3": 74,
+          "priceOption4": 156,
+          "count": 3,
+          "id": 3
+        },
+        {
+          "analyzName": "Октанове число за дослідним методом",
+          "testMethod": "Методика",
+          "priceOption1": 384,
+          "priceOption2": 348,
+          "priceOption3": 312,
+          "priceOption4": 270,
+          "count": 1,
+          "id": 5
+        }
+      ],
+      "basketArrival": [
+        {
+          "analyzName": "Виїзд на місце проведення аналізу",
+          "testMethod": "б/м",
+          "priceOption1": 24,
+          "priceOption2": 24,
+          "priceOption3": 24,
+          "priceOption4": 18,
+          "kilometer": 100
+        }
+      ],
+      "id": 2
+    },
+    {
+      "companyName": "Гіпократ",
+      "firstAndLastName": "Другий Петро пилипович",
+      "phoneNumber": "0987654321",
+      "email": "qwert@gmail.com",
+      "dateArrival": "23/11/2021",
+      "timeArrival": "13.00",
+      "addressArrival": "М. Львів, вул. Б. Хмельницького 275а, кв.25",
+      "amountKilometers": 200,
+      "price": 6648,
+      "optionPrice": 1,
+      "status": "DONE",
+      "basket": [
+        {
+          "analyzName": "Визначення густини",
+          "testMethod": "ДСТУ ГОСТ 31072",
+          "priceOption1": 90,
+          "priceOption2": 84,
+          "priceOption3": 72,
+          "priceOption4": 66,
+          "count": 1,
+          "id": 2
+        },
+        {
+          "analyzName": "Оформлення результатів",
+          "testMethod": "б/м",
+          "priceOption1": 222,
+          "priceOption2": 198,
+          "priceOption3": 74,
+          "priceOption4": 156,
+          "count": 1,
+          "id": 3
+        },
+        {
+          "analyzName": "Октанове число за дослідним методом",
+          "testMethod": "Методика",
+          "priceOption1": 384,
+          "priceOption2": 348,
+          "priceOption3": 312,
+          "priceOption4": 270,
+          "count": 4,
+          "id": 4
+        }
+      ],
+      "basketArrival": [
+        {
+          "analyzName": "Виїзд на місце проведення аналізу",
+          "testMethod": "б/м",
+          "priceOption1": 24,
+          "priceOption2": 24,
+          "priceOption3": 24,
+          "priceOption4": 18,
+          "kilometer": 200
+        }
+      ],
+      "id": 3
+    },
+    {
+      "companyName": "Second",
+      "firstAndLastName": "Перший Петро Пилипович",
+      "phoneNumber": "0987654321",
+      "email": "qwert@gmail.com",
+      "dateArrival": "2021-11-21",
+      "timeArrival": "01:03",
+      "addressArrival": "qwerапрнек5",
+      "amountKilometers": 23,
+      "price": 552,
+      "optionPrice": 1,
+      "status": "PENDING",
+      "basket": [],
+      "basketArrival": [
+        {
+          "analyzName": "Виїзд на місце проведення аналізу",
+          "testMethod": "б/м",
+          "priceOption1": 24,
+          "priceOption2": 24,
+          "priceOption3": 24,
+          "priceOption4": 18,
+          "kilometer": 23
+        }
+      ],
+      "id": 4
+    }
+  ]
+}

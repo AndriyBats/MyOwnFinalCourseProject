@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="d-flex justify-content-between">
+
+    <h3>Ваші реєстраційні дані</h3>
+    <button class="btn btn-danger" (click)="signOut()">SignOut</button>
+  </div>
+  <table class="table ">
+    <tbody ck>
+      <tr>
+        <th scope="row">Назва компанії або ПІП фізичної особи:</th>
+        <td>{{currentUser?.companyName}}</td>
+      </tr>
+      <tr>
+        <th scope="row">ПІП контактної особи:</th>
+        <td>{{currentUser?.firstAndLastName}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Номер телефону:</th>
+        <td>{{currentUser?.phoneNumber}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Електронна адреса:</th>
+        <td>{{currentUser?.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h3>Ваші замовлення</h3>
+
+  <hr>
+  <table class="table table-bordered border border-3 bg-light" >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ваші дані</th>
+        <th scope="col">Випробування</th>
+        <th scope="col">Доїзд до місця випробування</th>
+        <th scope="col">Загальна вартість замовлення</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let order of adminOrders">
+      <tr class="border border-3" *ngIf="currentUser.email === order.email">
+        <td>{{ order?.id }}</td>
+        <td>
+      <tr>
+        <td class="border border-1 px-2">Назва компанії або ПІП фізичної особи:</td>
+        <td class="border border-1 px-2">{{ order?.companyName }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">ПІП контактної особи:</td>
+        <td class="border border-1 px-2">{{ order?.firstAndLastName }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">Номер телефону:</td>
+        <td class="border border-1 px-2">{{ order.phoneNumber }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">Електронна адреса:</td>
+        <td class="border border-1 px-2">{{ order?.email }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">Дата прибуття:</td>
+        <td class="border border-1 px-2">{{ order?.dateArrival }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">Час прибуття:</td>
+        <td class="border border-1 px-2">{{ order?.timeArrival }}</td>
+      </tr>
+      <tr>
+        <td class="border border-1 px-2">Адреса прибуття:</td>
+        <td class="border border-1 px-2">{{ order?.addressArrival }}</td>
+      </tr>
+      </td>
+      <td>
+        <tr *ngFor="let analyz of order.basket">
+          <td class="border border-1 px-2">{{analyz?.analyzName}}</td>
+          <td class="border border-1 px-2">{{analyz?.count}}</td>
+          <td class="border border-1 px-2">
+            <p *ngIf="order.optionPrice === 1">{{ analyz.priceOption1 * analyz.count }} грн</p>
+            <p *ngIf="order.optionPrice === 2">{{ analyz.priceOption2 * analyz.count }} грн</p>
+            <p *ngIf="order.optionPrice === 3">{{ analyz.priceOption3 * analyz.count }} грн</p>
+            <p *ngIf="order.optionPrice === 4">{{ analyz.priceOption4 * analyz.count }} грн</p>
+          </td>
+        </tr>
+      </td>
+      <td>
+        <tr *ngFor="let arrival of order.basketArrival" class="border border-1 px-2">
+          <p>{{arrival.analyzName}}</p>
+          <p>{{arrival.kilometer}} км</p>
+
+          <p class="fw-bold" *ngIf="order.optionPrice === 1">{{ arrival.priceOption1 * arrival.kilometer }} грн.</p>
+          <p class="fw-bold" *ngIf="order.optionPrice === 2">{{ arrival.priceOption2 * arrival.kilometer }} грн.</p>
+          <p class="fw-bold" *ngIf="order.optionPrice === 3">{{ arrival.priceOption3 * arrival.kilometer }} грн.</p>
+          <p class="fw-bold" *ngIf="order.optionPrice === 4">{{ arrival.priceOption4 * arrival.kilometer }} грн.</p>
+        </tr>
+      </td>
+      <td>
+        <h6>Загальна вартість послуги становить:
+          <span class="fw-bold">{{order.price}} грн.</span>
+        </h6>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

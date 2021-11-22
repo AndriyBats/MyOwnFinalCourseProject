@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="discounts-content">
+    <div class="card d-block p-3 card-style d-flex justify-content-center" *ngFor="let discount of pageDiscounts">
+      <div class="card-body">
+        <h5 class="card-title text-success text-center text-uppercase text-color-lime">{{discount?.discountName}}</h5>
+      </div>
+      <div class="mx-auto">
+        <img [src]="discount.imagePath" class="card-img-top" style="width: 200px;height: 200px;" alt="...">
+      </div>
+      <p class="card-text text-center">{{discount?.description | slice: 0: 75}} ...</p>
+      <h3 class="text-center"><span style="color: greenyellow; font-weight: 500;">{{discount?.price}}</span> грн.
+      </h3>
+      <a type="button" class="btn btn-success rounded-pill" [routerLink]="[ '/discounts' , discount.id]">Детальніше</a>
+      <p class="card-text text-center">{{discount?.validityPeriod}}</p>
+    </div>
+  </div>
+</div>

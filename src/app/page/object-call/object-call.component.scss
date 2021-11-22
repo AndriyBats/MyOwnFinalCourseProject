@@ -1,0 +1,34 @@
+.object-call{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-block-object-call{
+    width: 60%;
+    padding: 20px;
+}
+
+.right-block-object-call{
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.btn-success{
+    background-color: lime;
+}
+
+.text-success{
+    color: lime !important;
+}
+
+@media screen and (max-width: 768px) {
+    .left-block-object-call{
+        width: 100%;
+    }
+    
+    .right-block-object-call{
+        width: 100%;
+    }
+}
