@@ -118,7 +118,7 @@ export class ObjectCallComponent implements OnInit {
           Validators.required,
           Validators.minLength(6),
           Validators.maxLength(30),
-          Validators.pattern("[a-zA-Z]")
+          Validators.pattern("[A-Za-z]{2,}")
         ]
       ],
       firstAndLastName: [
