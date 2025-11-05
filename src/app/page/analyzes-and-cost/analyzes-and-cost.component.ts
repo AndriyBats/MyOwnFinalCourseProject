@@ -8,6 +8,7 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
   templateUrl: './analyzes-and-cost.component.html',
   styleUrls: ['./analyzes-and-cost.component.scss']
 })
+
 export class AnalyzesAndCostComponent implements OnInit {
 
   public pageAnalyzes: Array<IAnalyzesResponse> = [];
@@ -20,6 +21,7 @@ export class AnalyzesAndCostComponent implements OnInit {
     private orderService: OrderService
   ) {
   }
+
   ngOnInit(): void {
     this.loadAnalyz();
     this.changeOption();
@@ -34,16 +36,20 @@ export class AnalyzesAndCostComponent implements OnInit {
     localStorage.setItem('optionPrice', JSON.stringify(this.optionPrice));
   }
 
-  changeOption(): void{
-    if(this.countAnalyz >= 10 && this.countAnalyz < 20){
+  changeOption(): void {
+    if (this.countAnalyz >= 10 && this.countAnalyz < 20) {
       this.optionPrice = 2;
-    }else if(this.countAnalyz >= 20 && this.countAnalyz < 50){
-      this.optionPrice = 3;
-    }else if(this.countAnalyz >= 50){
-      this.optionPrice = 4;
-    }else {
-      this.optionPrice = 1;
     }
+
+    if (this.countAnalyz >= 20 && this.countAnalyz < 50) {
+      this.optionPrice = 3;
+    }
+
+    if (this.countAnalyz >= 50) {
+      this.optionPrice = 4;
+    }
+
+    this.optionPrice = 1;
     localStorage.setItem('optionPrice', JSON.stringify(this.optionPrice));
   }
 
@@ -58,7 +64,6 @@ export class AnalyzesAndCostComponent implements OnInit {
     this.changeOption();
   }
   
-
   addToBasket(analyz: IAnalyzesResponse): void {
     let basket: IAnalyzesResponse[] = [];
     if(localStorage.length > 0 && localStorage.getItem('basket')){
